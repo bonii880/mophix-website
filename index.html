@@ -1,35 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Mophix Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <header>
         <h1>Welcome to Mophix</h1>
-        <p>Your go-to hub for tech solutions and innovation.</p>
+        <p>Your go-to tech solution provider</p>
     </header>
 
-    <section class="about">
+    <section id="about">
         <h2>About Us</h2>
-        <p>Mophix is all about cutting-edge tech, IT solutions, and electronics. Let’s build the future together!</p>
+        <p>Mophix specializes in cutting-edge tech services and solutions.</p>
     </section>
 
-    <section class="services">
+    <section id="services">
         <h2>Our Services</h2>
         <ul>
-            <li>Hardware Repairs & Upgrades</li>
-            <li>Software Installation & Support</li>
-            <li>Custom IT Solutions</li>
-            <li>Electronics Prototyping</li>
+            <li>Hardware and Electronics</li>
+            <li>Software Solutions</li>
+            <li>IT Consulting</li>
         </ul>
     </section>
 
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
     <footer>
-        <p>© 2025 Mophix. All rights reserved.</p>
+        <p>&copy; 2025 Mophix. All rights reserved.</p>
     </footer>
+
+    <script>
+        document.querySelector('button').addEventListener('mouseover', () => {
+            document.querySelector('button').style.transform = 'scale(1.1)';
+        });
+        document.querySelector('button').addEventListener('mouseout', () => {
+            document.querySelector('button').style.transform = 'scale(1)';
+        });
+    </script>
 </body>
 </html>
+
