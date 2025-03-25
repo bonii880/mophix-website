@@ -3,6 +3,68 @@
 <head>
     <title>Mophix Website</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        header, section, footer {
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #00c8ff;
+            animation: slideDown 0.8s ease-out;
+        }
+        @keyframes slideDown {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+            animation: fadeInUp 0.7s ease-out;
+        }
+        @keyframes fadeInUp {
+            from { transform: translateY(10px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        #contact p {
+            font-size: 1.2em;
+            font-weight: bold;
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        button {
+            background-color: #00c8ff;
+            color: #000;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s ease;
+            border-radius: 5px;
+            animation: fadeIn 1s ease-in;
+        }
+        button:hover {
+            background-color: #008fb3;
+            transform: scale(1.1) rotate(-2deg);
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -27,31 +89,11 @@
     <section id="contact">
         <h2>Contact Us</h2>
         <p>Call us: +254 769 111 712</p>
-        <form action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button type="submit">Send Message</button>
-        </form>
     </section>
 
     <footer>
         <p>&copy; 2025 Mophix. All rights reserved.</p>
     </footer>
-
-    <script>
-        document.querySelector('button').addEventListener('mouseover', () => {
-            document.querySelector('button').style.transform = 'scale(1.1)';
-        });
-        document.querySelector('button').addEventListener('mouseout', () => {
-            document.querySelector('button').style.transform = 'scale(1)';
-        });
-    </script>
 </body>
 </html>
+
