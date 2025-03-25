@@ -51,20 +51,31 @@
             100% { transform: scale(1); }
         }
         button {
-            background-color: #00c8ff;
-            color: #000;
+            background-color: #333;
+            color: #fff;
             padding: 10px 20px;
             border: none;
             cursor: pointer;
             transition: 0.3s ease;
             border-radius: 5px;
             animation: fadeIn 1s ease-in;
+            margin: 10px;
         }
         button:hover {
-            background-color: #008fb3;
+            background-color: #555;
             transform: scale(1.1) rotate(-2deg);
         }
+        .service-section {
+            display: none;
+        }
     </style>
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.service-section');
+            sections.forEach(section => section.style.display = 'none');
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -79,11 +90,24 @@
 
     <section id="services">
         <h2>Our Services</h2>
-        <ul>
-            <li>Hardware and Electronics</li>
-            <li>Software Solutions</li>
-            <li>IT Consulting</li>
-        </ul>
+        <button onclick="showSection('hardware')">Hardware and Electronics</button>
+        <button onclick="showSection('software')">Software Solutions</button>
+        <button onclick="showSection('consulting')">IT Consulting</button>
+    </section>
+
+    <section id="hardware" class="service-section">
+        <h2>Hardware and Electronics</h2>
+        <p>We provide high-quality computer components, repairs, and custom builds.</p>
+    </section>
+
+    <section id="software" class="service-section">
+        <h2>Software Solutions</h2>
+        <p>Custom software development, web apps, and tech support services.</p>
+    </section>
+
+    <section id="consulting" class="service-section">
+        <h2>IT Consulting</h2>
+        <p>Expert advice on infrastructure, cybersecurity, and business tech strategies.</p>
     </section>
 
     <section id="contact">
@@ -96,4 +120,3 @@
     </footer>
 </body>
 </html>
-
