@@ -34,6 +34,20 @@
         li:hover {
             color: #00c8ff;
         }
+        .back-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #00c8ff;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .back-button:hover {
+            background-color: #008bb5;
+        }
     </style>
 </head>
 <body>
@@ -47,6 +61,6 @@
             <li>IT Infrastructure Optimization</li>
         </ul>
     </div>
-    <button onclick="window.location.href='index.html'">Go Back</button>
+    <button class="back-button" onclick="window.location.href='index.html';">Go Back</button>
 </body>
 </html>
