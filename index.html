@@ -17,9 +17,6 @@
             from { opacity: 0; }
             to { opacity: 1; }
         }
-        header, section, footer {
-            padding: 20px;
-        }
         h1, h2 {
             color: #00c8ff;
             animation: slideDown 0.8s ease-out;
@@ -28,95 +25,40 @@
             from { transform: translateY(-20px); opacity: 0; }
             to { transform: translateY(0); opacity: 1; }
         }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        li {
-            margin: 10px 0;
-            animation: fadeInUp 0.7s ease-out;
-        }
-        @keyframes fadeInUp {
-            from { transform: translateY(10px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
-        #contact p {
-            font-size: 1.2em;
-            font-weight: bold;
-            animation: pulse 1.5s infinite;
-        }
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
         button {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
+            background-color: #222;
+            color: #00c8ff;
+            padding: 15px 25px;
+            border: 1px solid #00c8ff;
             cursor: pointer;
             transition: 0.3s ease;
             border-radius: 5px;
-            animation: fadeIn 1s ease-in;
+            font-size: 1.2em;
             margin: 10px;
+            animation: fadeIn 1s ease-in;
         }
         button:hover {
-            background-color: #555;
-            transform: scale(1.1) rotate(-2deg);
-        }
-        .service-section {
-            display: none;
+            background-color: #00c8ff;
+            color: #000;
+            transform: scale(1.1);
         }
     </style>
-    <script>
-        function showSection(sectionId) {
-            const sections = document.querySelectorAll('.service-section');
-            sections.forEach(section => section.style.display = 'none');
-            document.getElementById(sectionId).style.display = 'block';
-        }
-    </script>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Mophix</h1>
-        <p>Your go-to tech solution provider</p>
-    </header>
+    <h1>Welcome to Mophix</h1>
+    <p>Your go-to tech solution provider</p>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Mophix specializes in cutting-edge tech services and solutions.</p>
-    </section>
+    <button onclick="openService('hardware.html')">Hardware and Electronics</button>
+    <button onclick="openService('software.html')">Software Solutions</button>
+    <button onclick="openService('consulting.html')">IT Consulting</button>
 
-    <section id="services">
-        <h2>Our Services</h2>
-        <button onclick="showSection('hardware')">Hardware and Electronics</button>
-        <button onclick="showSection('software')">Software Solutions</button>
-        <button onclick="showSection('consulting')">IT Consulting</button>
-    </section>
+    <h2>Contact Us</h2>
+    <p>Call us: +254 769 111 712</p>
 
-    <section id="hardware" class="service-section">
-        <h2>Hardware and Electronics</h2>
-        <p>We provide high-quality computer components, repairs, and custom builds.</p>
-    </section>
-
-    <section id="software" class="service-section">
-        <h2>Software Solutions</h2>
-        <p>Custom software development, web apps, and tech support services.</p>
-    </section>
-
-    <section id="consulting" class="service-section">
-        <h2>IT Consulting</h2>
-        <p>Expert advice on infrastructure, cybersecurity, and business tech strategies.</p>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Call us: +254 769 111 712</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Mophix. All rights reserved.</p>
-    </footer>
+    <script>
+        function openService(servicePage) {
+            window.open(servicePage, '_blank');
+        }
+    </script>
 </body>
 </html>
