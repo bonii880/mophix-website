@@ -1,64 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Mophix Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mophix - Tech Innovations</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            background-color: #000;
-            color: #fff;
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            animation: fadeIn 1s ease-in;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        h1, h2 {
-            color: #00c8ff;
-            animation: slideDown 0.8s ease-out;
-        }
-        @keyframes slideDown {
-            from { transform: translateY(-20px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
-        button {
-            background-color: #222;
-            color: #00c8ff;
-            padding: 15px 25px;
-            border: 1px solid #00c8ff;
-            cursor: pointer;
-            transition: 0.3s ease;
-            border-radius: 5px;
-            font-size: 1.2em;
-            margin: 10px;
-            animation: fadeIn 1s ease-in;
-        }
-        button:hover {
-            background-color: #00c8ff;
-            color: #000;
-            transform: scale(1.1);
-        }
-    </style>
 </head>
 <body>
+
     <h1>Welcome to Mophix</h1>
-    <p>Your go-to tech solution provider</p>
 
-    <button onclick="openService('hardware.html')">Hardware and Electronics</button>
-    <button onclick="openService('software.html')">Software Solutions</button>
-    <button onclick="openService('consulting.html')">IT Consulting</button>
+    <div class="section">
+        <p>Innovating the Future. Elevating Possibilities.</p>
+        <p>We provide cutting-edge IT solutions, software, and hardware services.</p>
+    </div>
 
-    <h2>Contact Us</h2>
-    <p>Call us: +254 769 111 712</p>
+    <button onclick="window.location.href='hardware.html'">Hardware & Electronics</button>
+    <button onclick="window.location.href='software.html'">Software Solutions</button>
+    <button onclick="window.location.href='consulting.html'">IT Consulting</button>
 
-    <script>
-        function openService(servicePage) {
-            window.open(servicePage, '_blank');
-        }
-    </script>
 </body>
 </html>
