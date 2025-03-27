@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mophix</title>
+    <title>Mophix - IT Consulting</title>
     <link rel="stylesheet" href="style.css">
     <style>
         body {
@@ -13,9 +13,8 @@
         }
         h1 {
             color: #00c8ff;
-            font-size: 4em;
-            margin-top: 20px;
             animation: slideDown 0.8s ease-out;
+            font-size: 3em;
         }
         .menu {
             background: rgba(255, 255, 255, 0.1);
@@ -33,94 +32,81 @@
         .menu a:hover {
             color: #00c8ff;
         }
-        .hero {
-            margin-top: 50px;
+        .service-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
         }
-        .hero h2 {
-            font-size: 2.5em;
+        .service-buttons a {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 1.2em;
+            color: #fff;
+            transition: 0.3s;
+        }
+        .service-buttons a:hover {
+            background: #00c8ff;
+            color: #000;
+        }
+        .service-list {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 10px;
+            font-size: 1.2em;
+            transition: 0.3s;
+        }
+        li:hover {
             color: #00c8ff;
         }
-        .hero p {
-            font-size: 1.2em;
-            margin: 10px 0;
-        }
-        .cta-btn {
+        .back-btn {
             background: #00c8ff;
             border: none;
-            padding: 15px 30px;
+            padding: 10px 20px;
             font-size: 1.2em;
             cursor: pointer;
             color: #000;
             margin-top: 20px;
             border-radius: 5px;
         }
-        .cta-btn:hover {
+        .back-btn:hover {
             background: #0086b3;
-        }
-        .contact {
-            margin-top: 50px;
-            font-size: 1.2em;
-        }
-        .contact a {
-            color: #00c8ff;
-            text-decoration: none;
-        }
-        .contact a:hover {
-            color: #0086b3;
-        }
-        /* Floating Services Window */
-        .services-window {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            width: 300px;
-            background: rgba(255, 255, 255, 0.1);
-            padding: 15px;
-            border-radius: 10px;
-            text-align: left;
-            font-size: 1.1em;
-            transition: 0.3s;
-        }
-        .services-window h3 {
-            color: #00c8ff;
-            text-align: center;
-        }
-        .services-window ul {
-            list-style: none;
-            padding: 0;
-        }
-        .services-window li {
-            padding: 5px 0;
-        }
-        .services-window li:hover {
-            color: #00c8ff;
-            cursor: pointer;
         }
     </style>
 </head>
 <body>
     <h1>Mophix</h1>
     <div class="menu">
+        <a href="index.html">Home</a>
+    </div>
+    
+    <div class="service-buttons">
         <a href="hardware.html">Hardware</a>
         <a href="software.html">Software</a>
         <a href="consulting.html">Consulting</a>
     </div>
-    <div class="hero">
-        <h2>INNOVATE. ELEVATE. DOMINATE.</h2>
-        <p>Empowering businesses with cutting-edge technology.</p>
-        <button class="cta-btn">Get Started</button>
-    </div>
-    <div class="contact">
-        <p>📞 Contact us: <a href="tel:+254769111712">+254 769 111 712</a></p>
-    </div>
-    <!-- Floating Services Window -->
-    <div class="services-window">
-        <h3>Our Services</h3>
+    
+    <h2>IT Consulting Services</h2>
+    <div class="service-list">
         <ul>
-            <li onclick="window.location.href='hardware.html'">🔧 Hardware Solutions</li>
-            <li onclick="window.location.href='software.html'">💻 Software Development</li>
-            <li onclick="window.location.href='consulting.html'">📊 IT Consulting</li>
+            <li>IT Strategy & Planning</li>
+            <li>Cybersecurity Consulting</li>
+            <li>Cloud Consulting</li>
+            <li>Business Process Automation</li>
+            <li>IT Infrastructure Optimization</li>
         </ul>
     </div>
+    <button class="back-btn" onclick="window.location.href='index.html'">Go Back</button>
 </body>
 </html>
