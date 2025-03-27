@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Consulting - Mophix</title>
+    <title>Mophix - IT Consulting</title>
     <link rel="stylesheet" href="style.css">
     <style>
         body {
@@ -14,6 +14,23 @@
         h1 {
             color: #00c8ff;
             animation: slideDown 0.8s ease-out;
+            font-size: 3em;
+        }
+        .menu {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            border-radius: 10px;
+            display: inline-block;
+            margin: 20px auto;
+        }
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+        .menu a:hover {
+            color: #00c8ff;
         }
         .service-list {
             max-width: 800px;
@@ -34,24 +51,42 @@
         li:hover {
             color: #00c8ff;
         }
-        .back-button {
-            margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 1em;
-            background-color: #00c8ff;
-            color: #000;
+        .back-btn {
+            background: #00c8ff;
             border: none;
-            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 1.2em;
             cursor: pointer;
-            transition: 0.3s;
+            color: #000;
+            margin-top: 20px;
+            border-radius: 5px;
         }
-        .back-button:hover {
-            background-color: #008bb5;
+        .back-btn:hover {
+            background: #0086b3;
+        }
+        .contact {
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+        .contact a {
+            color: #00c8ff;
+            text-decoration: none;
+        }
+        .contact a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <h1>IT Consulting Services</h1>
+    <h1>Mophix</h1>
+    <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="hardware.html">Hardware</a>
+        <a href="software.html">Software</a>
+        <a href="consulting.html">Consulting</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <h2>IT Consulting Services</h2>
     <div class="service-list">
         <ul>
             <li>IT Strategy & Planning</li>
@@ -61,6 +96,9 @@
             <li>IT Infrastructure Optimization</li>
         </ul>
     </div>
-    <button class="back-button" onclick="window.location.href='index.html';">Go Back</button>
+    <button class="back-btn" onclick="window.location.href='index.html'">Go Back</button>
+    <div class="contact">
+        <p>Contact us: <a href="tel:+254769111712">+254 769 111 712</a></p>
+    </div>
 </body>
 </html>
