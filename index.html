@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Mophix - IT Consulting</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mophix - Home</title>
     <link rel="stylesheet" href="style.css">
     <style>
         body {
@@ -9,82 +11,101 @@
             color: #fff;
             font-family: 'Arial', sans-serif;
             text-align: center;
+            margin: 0;
+            padding: 0;
             animation: fadeIn 1s ease-in;
         }
         h1 {
+            font-size: 4em;
             color: #00c8ff;
-            animation: slideDown 0.8s ease-out;
-            font-size: 3em;
+            font-weight: bold;
+            margin-top: 20px;
+            animation: slideDown 1s ease-out;
         }
         .menu {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 10px;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
             border-radius: 10px;
             display: inline-block;
-            margin: 20px auto;
+            margin-top: 20px;
         }
         .menu a {
             color: #fff;
             text-decoration: none;
             margin: 0 15px;
-            font-size: 1.2em;
+            font-size: 1.5em;
+            font-weight: bold;
         }
         .menu a:hover {
             color: #00c8ff;
         }
-        .service-list {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
+        .slogan {
+            font-size: 2.5em;
+            color: #00c8ff;
+            font-weight: bold;
+            margin-top: 50px;
+            animation: fadeInUp 1s ease-in-out;
         }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            padding: 10px;
+        .description {
             font-size: 1.2em;
+            margin-top: 10px;
+            color: #ccc;
+        }
+        .get-started {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 1.5em;
+            background: #00c8ff;
+            color: #000;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
             transition: 0.3s;
         }
-        li:hover {
-            color: #00c8ff;
-        }
-        .back-btn {
-            background: #00c8ff;
-            border: none;
-            padding: 10px 20px;
-            font-size: 1.2em;
-            cursor: pointer;
-            color: #000;
-            margin-top: 20px;
-            border-radius: 5px;
-        }
-        .back-btn:hover {
+        .get-started:hover {
             background: #0086b3;
+        }
+        .contact {
+            margin-top: 40px;
+            font-size: 1.2em;
+            color: #fff;
+        }
+        .contact a {
+            color: #00c8ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideDown {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
         }
     </style>
 </head>
 <body>
     <h1>Mophix</h1>
     <div class="menu">
-        <a href="index.html">Home</a>
         <a href="hardware.html">Hardware</a>
         <a href="software.html">Software</a>
         <a href="consulting.html">Consulting</a>
         <a href="contact.html">Contact</a>
     </div>
-    <h2>IT Consulting Services</h2>
-    <div class="service-list">
-        <ul>
-            <li>IT Strategy & Planning</li>
-            <li>Cybersecurity Consulting</li>
-            <li>Cloud Consulting</li>
-            <li>Business Process Automation</li>
-            <li>IT Infrastructure Optimization</li>
-        </ul>
+    <div class="slogan">INNOVATE. ELEVATE. DOMINATE.</div>
+    <p class="description">Empowering businesses with cutting-edge technology.</p>
+    <a href="getstarted.html" class="get-started">Get Started</a>
+    <div class="contact">
+        <p>📞 Contact us: <a href="tel:+254769111712">+254 769 111 712</a></p>
     </div>
-    <button class="back-btn" onclick="window.location.href='index.html'">Go Back</button>
 </body>
 </html>
