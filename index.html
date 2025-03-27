@@ -68,6 +68,34 @@
         .contact a:hover {
             color: #0086b3;
         }
+        /* Floating Services Window */
+        .services-window {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 300px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: left;
+            font-size: 1.1em;
+            transition: 0.3s;
+        }
+        .services-window h3 {
+            color: #00c8ff;
+            text-align: center;
+        }
+        .services-window ul {
+            list-style: none;
+            padding: 0;
+        }
+        .services-window li {
+            padding: 5px 0;
+        }
+        .services-window li:hover {
+            color: #00c8ff;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -84,6 +112,15 @@
     </div>
     <div class="contact">
         <p>📞 Contact us: <a href="tel:+254769111712">+254 769 111 712</a></p>
+    </div>
+    <!-- Floating Services Window -->
+    <div class="services-window">
+        <h3>Our Services</h3>
+        <ul>
+            <li onclick="window.location.href='hardware.html'">🔧 Hardware Solutions</li>
+            <li onclick="window.location.href='software.html'">💻 Software Development</li>
+            <li onclick="window.location.href='consulting.html'">📊 IT Consulting</li>
+        </ul>
     </div>
 </body>
 </html>
