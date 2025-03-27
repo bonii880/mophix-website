@@ -1,41 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mophix - Innovate. Elevate. Dominate.</title>
+    <title>Mophix - IT Consulting</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            animation: fadeIn 1s ease-in;
+        }
+        h1 {
+            color: #00c8ff;
+            animation: slideDown 0.8s ease-out;
+            font-size: 3em;
+        }
+        .menu {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            border-radius: 10px;
+            display: inline-block;
+            margin: 20px auto;
+        }
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+        .menu a:hover {
+            color: #00c8ff;
+        }
+        .service-list {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 10px;
+            font-size: 1.2em;
+            transition: 0.3s;
+        }
+        li:hover {
+            color: #00c8ff;
+        }
+        .back-btn {
+            background: #00c8ff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            color: #000;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        .back-btn:hover {
+            background: #0086b3;
+        }
+    </style>
 </head>
 <body>
-
-    <!-- Navigation Bar -->
-    <header>
-        <div class="logo">Mophix</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="hardware.html">Hardware</a></li>
-                <li><a href="software.html">Software</a></li>
-                <li><a href="consulting.html">Consulting</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Innovate. Elevate. Dominate.</h1>
-            <p>Empowering businesses with cutting-edge technology.</p>
-            <a href="#contact" class="cta-button">Get Started</a>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>📞 +254 769 111 712</p>
-    </section>
-
+    <h1>Mophix</h1>
+    <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="hardware.html">Hardware</a>
+        <a href="software.html">Software</a>
+        <a href="consulting.html">Consulting</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <h2>IT Consulting Services</h2>
+    <div class="service-list">
+        <ul>
+            <li>IT Strategy & Planning</li>
+            <li>Cybersecurity Consulting</li>
+            <li>Cloud Consulting</li>
+            <li>Business Process Automation</li>
+            <li>IT Infrastructure Optimization</li>
+        </ul>
+    </div>
+    <button class="back-btn" onclick="window.location.href='index.html'">Go Back</button>
 </body>
 </html>
