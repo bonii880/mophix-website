@@ -1,9 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mophix - Home</title>
+    <title>Mophix</title>
     <link rel="stylesheet" href="style.css">
     <style>
         body {
@@ -11,85 +9,64 @@
             color: #fff;
             font-family: 'Arial', sans-serif;
             text-align: center;
-            margin: 0;
-            padding: 0;
             animation: fadeIn 1s ease-in;
         }
         h1 {
-            font-size: 4em;
             color: #00c8ff;
-            font-weight: bold;
+            font-size: 4em;
             margin-top: 20px;
-            animation: slideDown 1s ease-out;
+            animation: slideDown 0.8s ease-out;
         }
         .menu {
-            background: rgba(255, 255, 255, 0.2);
-            padding: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px;
             border-radius: 10px;
             display: inline-block;
-            margin-top: 20px;
+            margin: 20px auto;
         }
         .menu a {
             color: #fff;
             text-decoration: none;
             margin: 0 15px;
-            font-size: 1.5em;
-            font-weight: bold;
+            font-size: 1.2em;
         }
         .menu a:hover {
             color: #00c8ff;
         }
-        .slogan {
+        .hero {
+            margin-top: 50px;
+        }
+        .hero h2 {
             font-size: 2.5em;
             color: #00c8ff;
-            font-weight: bold;
-            margin-top: 50px;
-            animation: fadeInUp 1s ease-in-out;
         }
-        .description {
+        .hero p {
             font-size: 1.2em;
-            margin-top: 10px;
-            color: #ccc;
+            margin: 10px 0;
         }
-        .get-started {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 15px 30px;
-            font-size: 1.5em;
+        .cta-btn {
             background: #00c8ff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
             color: #000;
-            border-radius: 10px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: 0.3s;
+            margin-top: 20px;
+            border-radius: 5px;
         }
-        .get-started:hover {
+        .cta-btn:hover {
             background: #0086b3;
         }
         .contact {
-            margin-top: 40px;
+            margin-top: 50px;
             font-size: 1.2em;
-            color: #fff;
         }
         .contact a {
             color: #00c8ff;
             text-decoration: none;
-            font-weight: bold;
         }
         .contact a:hover {
-            text-decoration: underline;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        @keyframes slideDown {
-            from { transform: translateY(-20px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
-        @keyframes fadeInUp {
-            from { transform: translateY(20px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
+            color: #0086b3;
         }
     </style>
 </head>
@@ -99,11 +76,12 @@
         <a href="hardware.html">Hardware</a>
         <a href="software.html">Software</a>
         <a href="consulting.html">Consulting</a>
-        <a href="contact.html">Contact</a>
     </div>
-    <div class="slogan">INNOVATE. ELEVATE. DOMINATE.</div>
-    <p class="description">Empowering businesses with cutting-edge technology.</p>
-    <a href="getstarted.html" class="get-started">Get Started</a>
+    <div class="hero">
+        <h2>INNOVATE. ELEVATE. DOMINATE.</h2>
+        <p>Empowering businesses with cutting-edge technology.</p>
+        <button class="cta-btn">Get Started</button>
+    </div>
     <div class="contact">
         <p>📞 Contact us: <a href="tel:+254769111712">+254 769 111 712</a></p>
     </div>
